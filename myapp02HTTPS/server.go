@@ -21,7 +21,7 @@ func main() {
 	e.POST("/save", save)
 	e.POST("/saveIMG", saveIMG)
 	//e.Logger.Fatal(e.Start(":1323"))  ///http
-	e.Logger.Fatal(e.StartTLS(":8443", "cert.csr", "server.key"))
+	e.Logger.Fatal(e.StartTLS(":8443", "server.crt", "server.key"))
 
 }
 
